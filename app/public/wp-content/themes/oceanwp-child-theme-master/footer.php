@@ -19,6 +19,7 @@
 		?>
 
 		<?php do_action( 'ocean_footer' ); ?>
+		hello
 
 	<?php } ?>
 
