@@ -27,6 +27,7 @@ function oceanwp_child_enqueue_parent_style() {
 
 	// Load the stylesheet.
 	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'oceanwp-style' ), $version );
+	wp_enqueue_style('child-full-style', get_stylesheet_directory_uri() . '/assets/css/style.css');
 	
 }
 
