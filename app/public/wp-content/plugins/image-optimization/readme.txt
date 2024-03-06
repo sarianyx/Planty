@@ -4,11 +4,11 @@ Tags: image optimization, image compression, convert webp, resize images, perfor
 Requires at least: 6.2
 Tested up to: 6.4
 Requires PHP: 7.4
-Stable tag: 1.1.0
+Stable tag: 1.3.0
 License: GPL-3
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
-Automatically compress and optimize images, resize larger files, convert to WebP. Do it in bulk or upon load and turbocharge your WordPress site performance.
+Automatically compress & optimize images, resize larger files, convert to WebP. Try in bulk or upon load and boost your WordPress site performance.
 
 == Description ==
 Image Optimizer is an easy-to-use WordPress plugin that reduces image size through various compression and resizing techniques - all of which preserve the highest possible image quality. Image Optimizer supports many popular formats, including  JPEG, PNG, WebP, and GIF.
@@ -110,6 +110,26 @@ Yes, the Elementor team offers full support for image optimization questions. Yo
 3. Image Optimizer - Bulk Actions and Individual Actions in the Media Library
 
 == Changelog ==
+
+= 1.3.0 - 2024-03-05 =
+* Tweak: Updated reoptimization option when changing settings
+* Tweak: Added RTL adjustments
+* Fix: Optimization button status not updating
+* Fix: Error while deactivating or switching Elementor account
+
+= 1.2.1 - 2024-02-28 =
+* Fix: Image optimization stats not loading
+* Tweak: Added notice regarding extended bulk optimization not affecting user's website
+
+= 1.2.0 - 2024-02-19 =
+* Tweak: Reduced status checks for better performance
+* Tweak: Improved Elementor support by removing cached thumbnails
+* Tweak: Added DB version check during activation to prevent requirement conflicts
+* Fix: Optimization failed with numerous errors
+* Fix: Bulk Optimization stopped with an Invalid WordPress image meta error
+* Fix: Avoid optimizing too large image files as part of bulk optimization
+* Fix: Added RTL support for plugin settings page
+
 = 1.1.0 - 2024-02-06 =
 * Tweak: Design for quota reached in top bar
 * Tweak: Refresh bulk token if the current one is expired

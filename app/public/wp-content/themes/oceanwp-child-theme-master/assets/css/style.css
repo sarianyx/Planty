@@ -724,7 +724,7 @@ select,
 textarea {
   color: inherit; /* 1 */
   font: inherit; /* 2 */
-  margin: 0; /* 3 */
+  margin: 3px 0px; /* 3 */
 }
 
 /**
@@ -1964,16 +1964,16 @@ form input[type=color],
 form select,
 form textarea {
   display: inline-block;
-  min-height: 40px;
+  min-height: 71px; /*sarianyx*/
   width: 100%;
   font-size: 14px;
   line-height: 1.8;
-  padding: 6px 12px;
+  padding: 10px 12px;
   vertical-align: middle;
-  background-color: transparent;
-  color: #333;
+  background-color: white; /*sarianyx*/
+  color: black; /*sarianyx*/
   border: 1px solid #ddd;
-  border-radius: 3px;
+  border-radius: 7px; /*sarianyx*/
   transition: all 0.3s ease;
 }
 
@@ -2174,6 +2174,7 @@ form select[multiple] {
 
 form label {
   margin-bottom: 3px;
+  color: black; /*sarianyx*/
 }
 
 form fieldset {
@@ -8142,6 +8143,11 @@ span.required {
     margin-top: 40px;
   }
 }
+
+.elementor-element-7fda7c3 {
+  
+}
+
 /*------------------------------------*
 	$GENERAL
 *------------------------------------*/
@@ -8217,6 +8223,86 @@ body .elementor-element.elementor-wc-products ul.products li.product.circle-sale
 .elementor-field-type-acceptance .elementor-field-subgroup .elementor-field-option input[type=checkbox] {
   display: inline-block;
 }
+
+/*------------------------------------*
+	$wpcf7
+*------------------------------------*/
+.wpcf7-spinner {
+  margin: 0px;
+  width: 0px;
+  height: 0px;
+  display: unset;
+}
+
+input.wpcf7-form-control.wpcf7-submit {
+  display: block;
+  margin: 0 auto;
+}
+
+.quantite input.wpcf7-form-control.wpcf7-text {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 2px;
+  width: 39px;
+  height: 56px;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  border: none;
+  border-radius: 0px;
+}
+.deux-colonnes label {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+.titre-une-colonne {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+.deux-colonnes input.wpcf7-form-control.wpcf7-text {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  border-radius: 7px;
+}
+.une-colonne {
+  display: flex;
+  flex-direction: column;
+}
+.colonne-un {
+  border-right: solid 1px white;
+  padding-right: 40px;
+  padding-left: 0px;
+}
+.colonne-deux {
+  padding-left: 40px;
+  padding-right: 0px;
+}
+.deux-colonnes {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0px;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-bottom: 0px;
+}
+@media (max-width: 900px) {
+  .deux-colonnes {
+    flex-direction: column;
+  }
+  .colonne-un {
+    border-right: none;
+    padding-right: 0px;
+  }
+  .colonne-deux {
+    padding-left: 0px;
+  }
+}
+
 
 /*------------------------------------*
 	$SIDR
