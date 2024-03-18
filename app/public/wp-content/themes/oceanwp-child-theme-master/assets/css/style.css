@@ -8282,6 +8282,22 @@ input.wpcf7-form-control.wpcf7-submit {
   padding-left: 40px;
   padding-right: 0px;
 }
+.colonne-a {
+  padding-left: 0px;
+  padding-right: 10px;
+}
+.colonne-b {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.colonne-c {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.colonne-d {
+  padding-left: 10px;
+  padding-right: 0px;
+}
 .deux-colonnes {
   display: flex;
   flex-direction: row;
@@ -8289,9 +8305,29 @@ input.wpcf7-form-control.wpcf7-submit {
   justify-content: center;
   margin-bottom: 20px;
   padding-bottom: 0px;
+  padding-top: 10px;
+  border-top: solid 1px white;
+}
+.quatre-colonnes {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0px;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-bottom: 0px;
+}
+.quantite.elementor-img img{
+  max-width: 193px;
+}
+img.imageqte {
+  max-width: 193px;
+  padding-bottom: 20px;
 }
 @media (max-width: 900px) {
   .deux-colonnes {
+    flex-direction: column;
+  }
+  .quatre-colonnes {
     flex-direction: column;
   }
   .colonne-un {
